@@ -123,21 +123,33 @@ section ul {
     align-self: flex-end;
 }
 
-#skills h2 {
-    font-weight: 700;
-    color: #0F212B;
+.main-skill-img {
+  max-width: 280px;
 }
 
-#skills ul {
-    padding-left: 20px;
+/* Default tampilan (desktop) */
+#skills .skill-item {
+  justify-content: flex-start;
+  text-align: left;
 }
 
-#skills img {
-    object-fit: contain;
+#skills .main-skill-img {
+  margin-bottom: 20px;
+  max-width: 220px;
 }
 
-#skills ul {
-    padding-left: 18px;
+#skills .content-box {
+  text-align: left;
+}
+
+.skill-icon {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.skill-item {
+  align-items: flex-start;
 }
 
 .project-card {
@@ -224,5 +236,19 @@ section ul {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+    }
+
+    #skills .skill-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #skills .skill-item .skill-icon {
+        margin-bottom: 10px;
+    }
+
+    #skills .content-box {
+        text-align: left;
     }
 }
